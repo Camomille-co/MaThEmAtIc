@@ -23,6 +23,26 @@ namespace MaThEmAtIc.Controllers
             return View();
         }
 
+        public IActionResult FOS()
+        {
+            return View("FOS");
+        }
+
+        public IActionResult Homework()
+        {
+            return View("Homework");
+        }
+
+        public IActionResult Lectures()
+        {
+            return View("Lectures");
+        }
+
+        public IActionResult RPD()
+        {
+            return View("RPD");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

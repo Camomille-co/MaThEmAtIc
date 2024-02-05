@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MaThEmAtIc</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Сайт преподавателя математики ТК ВСГУТУ</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,40 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                            <ul class="subnavbar">
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home">Студентам</a>
+                            <ul class="subnavbar">
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Homework">Домашние задания</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FOS">ФОС</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RPD">РПД</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Lectures">Лекции</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="">Колягин Ю.Н.</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="">Полезные ссылки</a>
+                            <ul class="subnavbar">
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="">Новости</a>
+                            <ul class="subnavbar">
+
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +68,9 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - MaThEmAtIc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; Преподаватель Пойдонова В.В.<a asp-area="" asp-controller="Home"></a>
+            <span style="border-radius: 2px; padding: 10px 20px;">ⓔ poidonova.v.v@gmail.ru</span>
+            <span style="border-radius: 2px; padding: 10px 20px;">✆ 8(3012)430390</span>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

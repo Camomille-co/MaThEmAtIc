@@ -20,3 +20,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.subnavbar{
+    min-width: 200px;
+    position: absolute;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+a{
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.navbar-nav li:hover > .subnavbar {
+    opacity: 1;
+    visibility: visible;
+    transform: rotateX(0deg);
+}
+
+.subnavbar li {
+    position: relative;
+}
