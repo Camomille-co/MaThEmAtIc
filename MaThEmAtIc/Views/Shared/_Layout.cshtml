@@ -40,8 +40,9 @@
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Lectures">Лекции</a>
                                 </li>
                                 <li>
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="">Колягин Ю.Н.</a>
+                                    <p><a class="nav-link text-dark" href="https://documentcloud.wondershare.com/clientShare/review/bpcFVoayn8Msp0rtjRcN4cP_WJymT72B7wLS982SrRnIemh90C6SFKpPd9eWxdV-li9IkVCTQdd4nPDHRUHANA">Колягин Ю.Н.</a></p>
                                 </li>
+                                
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -54,6 +55,42 @@
                             <ul class="subnavbar">
 
                             </ul>
+                        </li>
+                        <ul class="navbar-nav flex-grow-2">
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Вход</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-action="NewUser" asp-controller="Home">Регистрация</a>
+                            </li>
+                            @* @if (SignInManager.IsSignedIn(User))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Привет @User.Identity?.Name!</a>
+                                </li>
+                                <li class="nav-item">
+                                    <form class="form-check-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = ""})">
+                                        <button type="submit" class="nav-link btn btn-link text-dark">Выход</button>
+                                    </form>
+                                </li>
+                            } *@
+                            @* else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-action="NewUser" asp-controller="Home">Регистрация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-action="Login" asp-controller="Home">Вход</a>
+                                </li>
+                            } *@
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav flex-grow-2">
+                        <li>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Вход</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-action="NewUser" asp-controller="Home">Регистрация</a>
                         </li>
                     </ul>
                 </div>

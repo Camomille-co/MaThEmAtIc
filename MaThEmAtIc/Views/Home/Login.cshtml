@@ -1,0 +1,21 @@
+﻿@model LoginModel;
+<h1>Авторизация</h1>
+<div>
+    <form asp-action="Authorize" asp-controller="Home">
+        <div>
+            Введите логин
+        </div>
+        <input type="text" asp-for="Login" />
+        <div>
+            Введите пароль
+        </div>
+        <input type="password" asp-for="Password" />
+        <div>
+            <button type="submit">Войти</button>
+        </div>
+        @if (Model != null)
+        {
+            <div>@Model.Result</div>
+        }
+    </form>
+</div>
